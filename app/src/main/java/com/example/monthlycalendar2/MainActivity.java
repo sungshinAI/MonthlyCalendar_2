@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         cal.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int year, int month, int day) {
-                tv_text.setText((month+1) + "월 ");
+                tv_text.setText(year + "년 " + (month+1) + "월 " + day + "일");
             }
         });
     }

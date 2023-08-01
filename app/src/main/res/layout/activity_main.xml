@@ -11,44 +11,57 @@
         android:id="@+id/cal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="104dp" />
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="61dp"
+        tools:unfocusedMonthDateColor="#2196F3" />
 
     <ImageButton
         android:id="@+id/homeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background = "@android:color/transparent"
-        app:srcCompat="@drawable/home"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="648dp" />
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home" />
 
     <ImageButton
         android:id="@+id/checkButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background = "@android:color/transparent"
-        app:srcCompat="@drawable/check"
-        tools:layout_editor_absoluteX="328dp"
-        tools:layout_editor_absoluteY="651dp" />
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/check" />
 
     <ImageButton
         android:id="@+id/listButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background = "@android:color/transparent"
-        app:srcCompat="@drawable/list"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="651dp" />
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/calButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:srcCompat="@drawable/list" />
 
     <ImageButton
         android:id="@+id/calButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/calendar"
-        android:background = "@android:color/transparent"
-        tools:layout_editor_absoluteX="232dp"
-        tools:layout_editor_absoluteY="645dp" />
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/listButton"
+        app:srcCompat="@drawable/calendar" />
 
     <TextView
         android:id="@+id/tv_text"
@@ -56,10 +69,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="날짜를 선택해 주세요"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="51dp" />
+        tools:layout_editor_absoluteY="467dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
